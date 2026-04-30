@@ -24,7 +24,6 @@ A test automation framework built with Playwright and TypeScript, implementing a
 ---
 
 ## Project Structure
-
 orangehrm-assessment/
 ├── pages/
 │   ├── LoginPage.ts        # Login page object
@@ -32,27 +31,30 @@ orangehrm-assessment/
 ├── tests/
 │   └── leave.test.ts       # Test scenario
 ├── .env                    # Environment variables (not committed to GitHub)
+├── .gitignore              # Excludes node_modules, .env and test output from GitHub
 ├── playwright.config.ts    # Playwright configuration
-├── package.json
-└── README.md
+├── package.json            # Project dependencies
+├── README.md               # Project documentation
+├── test-results.png        # Test execution output screenshot
+└── tsconfig.json           # TypeScript configuration
 
 ---
 
 ## Test Scenario
 
 **Scenario: Search for scheduled leave**
-
 Given Alice logs into OrangeHR
 When Alice navigates to Leave List
 Then Alice can set a date range
 And Alice can search for scheduled leave
+
 ---
 
 ## Setup & Installation
 
 1. Clone the repository:
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/jmreddy1216/orangehrm-assessment.git
 cd orangehrm-assessment
 ```
 
@@ -67,10 +69,8 @@ npx playwright install
 ```
 
 4. Create a `.env` file in the root with the following:
-
-BASE_URL=https://opensource-demo.orangehrmlive.com/
-USERNAME=Admin
-PASSWORD=admin123
+ORANGEHR_USERNAME=Admin
+ORANGEHR_PASSWORD=admin123
 
 ---
 
