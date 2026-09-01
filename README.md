@@ -2,7 +2,7 @@
 
 ## Overview
 
-A test automation framework built with Playwright and TypeScript, implementing an end-to-end test scenario against OrnageHRM's public demo environment; covering the Leave module and login validation.
+A test automation framework built with Playwright and TypeScript, implementing an end-to-end test scenario against OrangeHRM's public demo environment; covering the Leave module and login validation.
 
 ---
 
