@@ -1,4 +1,4 @@
-# OrangeHRM Test Automation – Clue Software Technical Assessment
+# OrangeHRM Test Automation Sample
 
 ## Overview
 
