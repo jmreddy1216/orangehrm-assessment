@@ -1,8 +1,8 @@
-# OrangeHRM Test Automation – Clue Software Technical Assessment
+# OrangeHRM Test Automation Sample
 
 ## Overview
 
-A test automation framework built with Playwright and TypeScript, implementing an end-to-end test scenario for the Leave section of OrangeHRM.
+A test automation framework built with Playwright and TypeScript, implementing an end-to-end test scenario against OrnageHRM's public demo environment; covering the Leave module and login validation.
 
 ---
 
