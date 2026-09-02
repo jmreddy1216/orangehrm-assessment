@@ -29,7 +29,8 @@ orangehrm-assessment/
 │   ├── LoginPage.ts        # Login page object
 │   └── LeavePage.ts        # Leave page object
 ├── tests/
-│   └── leave.test.ts       # Test scenario
+│   ├── leave.test.ts       # Leave search scenario
+│   └── login.test.ts       # Negative login scenario
 ├── .env                    # Environment variables (not committed to GitHub)
 ├── .gitignore              # Excludes node_modules, .env and test output from GitHub
 ├── playwright.config.ts    # Playwright configuration
@@ -40,7 +41,7 @@ orangehrm-assessment/
 
 ---
 
-## Test Scenario
+## Test Scenarios
 
 **Scenario: Search for scheduled leave**
 Given Alice logs into OrangeHR
@@ -48,6 +49,10 @@ When Alice navigates to Leave List
 Then Alice can set a date range
 And Alice can search for scheduled leave
 
+**Scenario: Invalid login shows an error**
+Given a user attempts to log in with a wrong password
+Then an invalid credentials message is shown
+And the user remains on the login page
 ---
 
 ## Setup & Installation
